@@ -55,6 +55,13 @@ even: nums => nums.filter(isEven),
 firsttwo : nums => nums.slice(0,2),
 has2 : nums =>  nums.includes(2),
 increment : nums => nums.map((num)=> num +1),
+someeven : nums => nums.some((num)=> isEven(num)),
+everyeven : nums => nums.every((num)=> isEven(num)),
+random : ([x,y])=> Math.floor(Math.random()* y+x),
+range : nums => range(...nums),
+nodupes : nums => [...new Set(nums).values()],
+"" : nums => nums,
+
 
 
 
